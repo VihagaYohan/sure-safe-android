@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.byteworks.suresafe"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.byteworks.suresafe"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -62,6 +62,9 @@ dependencies {
     // hilt DI
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+
+    // icons
+    implementation("androidx.compose.material:material-icons-extended:1.7.6")
 }
 
 // Allow references to generated code
